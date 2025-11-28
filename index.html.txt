@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUŞ KARDA DONDURMA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4dd0e1;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        nav {
+            background-color: #00838f;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #e0f7fa;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Ürünler Bölümü */
+        .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Hakkında ve İletişim */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #00838f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobil uyum */
+        @media (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MUŞ KARDA DONDURMA</h1>
+    <p>Küçük büyük herkes serinlesin!</p>
+</header>
+
+<nav>
+    <a href="#urunler">Ürünler</a>
+    <a href="#hakkinda">Hakkında</a>
+    <a href="#iletisim">İletişim</a>
+</nav>
+
+<section class="hero">
+    <h1>Dilimli dondurmamız harika denemelisiniz..!</h1>
+    <p>Bizi arayın beraber çalışalım..!</p>
+</section>
+
+<!-- Ürünler Bölümü -->
+<section id="urunler" class="products">
+    <div class="product-card">
+        <img src="kornet.png" alt=>
+        <h3>Kornet Dondurma</h3>
+        <p>Külah ve Dondurmanın Arkadaşlığı</p>
+    </div>
+    <div class="product-card">
+        <img src="kornet.png" alt=>
+        <h3>Sandavic Dondurma</h3>
+        <p>Bisküvi ve Dondurmanın Arkadaşlığı</p>
+    </div>
+    <div class="product-card">
+        <img src="kornet.png" alt=>
+        <h3>Dilimli Dondurma</h3>
+        <p>Tamamen Maraş Usulü</p>
+    </div>
+    <div class="product-card">
+        <img src="karda-jumbo.png" alt=>
+        <h3>Karda Jumbo</h3>
+        <p>Buz gibi serinletici lezzet</p>
+    </div>
+</section>
+
+<!-- Hakkında Bölümü -->
+<section id="hakkinda">
+    <h2>Hakkımızda</h2>
+    <p>
+        MUŞ KARDA DONDURMA, 2013 yılından beri özveri ve titizlikle yaptığı çalışmalardan dolayı bölgede
+        çok geniş bir müşteri yelpazesine ulaşmış durumda. Temiz ve güvenilir ürünlerimizi zamanında ve sorunsuz
+        bir şekilde teslim etmenin gururunu yaşıyoruz..! Müşteri
+        memnuniyeti ilk tercihimiz olup güven vazgeçilmez prensibimizdir...!
+    </p>
+</section>
+
+<!-- İletişim Bölümü -->
+<section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bizimle iletişime geçin: davutargun4921@gmail.com | 0532 480 64 74</p>
+</section>
+
+<footer>
+    &copy; 2025 MUŞ KARDA DONDURMA
+</footer>
+
+</body>
+</html>
